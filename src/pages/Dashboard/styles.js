@@ -36,6 +36,7 @@ export const Time = styled.li`
   padding: 20px;
   background: #fff;
   border-radius: 4px;
+  /* order: 0; */
 
   opacity: ${props => (props.past ? 0.6 : 1)};
 
