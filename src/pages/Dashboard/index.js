@@ -52,7 +52,7 @@ export default function Dasshboard() {
     }
 
     loadSchedule();
-  }, []);
+  }, [date]);
 
   function handlePrevDay() {
     setDate(subDays(date, 1));
