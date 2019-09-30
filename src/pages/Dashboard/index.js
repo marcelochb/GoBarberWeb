@@ -43,7 +43,7 @@ export default function Dasshboard() {
           time: `${hour} :00h`,
           past: isBefore(compareDate, new Date()),
           appointment: response.data.find(a =>
-            isEqual(parseISO(a.date), compareDate)
+            isEqual(utcToZonedTime(parseISO(a.date), timezone), compareDate)
           ),
         };
       });
